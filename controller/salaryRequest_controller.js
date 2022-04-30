@@ -12,7 +12,11 @@ const salaryRequest =async (req, res) => {
     const overallTotalDays= req.body.overallTotalDays;
     const overallTotalAbsent= req.body.overallTotalAbsent;
     const requestTo= req.body.requestTo;
-    const date =new Date();
+    const DateandTimeSplit = new Date().toLocaleString().split(",");
+    const DateandTimeIn = new Date().toLocaleString();
+
+    const date = DateandTimeSplit[0]
+
     const status =req.body.status;
     const subject ="Work Salary";
     const from ="Secretary";
