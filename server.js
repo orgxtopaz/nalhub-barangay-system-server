@@ -333,13 +333,15 @@ migzapp.post(
         const position = req.body.position;
         const purpose = req.body.purpose;
         const email = req.body.email
+        const dateCreated = req.body.dateCreated
        
         const newTravel = new travelLog({
            fullname,
            date ,
            purpose ,
            position ,
-           email
+           email,
+          dateCreated
         }); // Instantiate the User in user.model
 
         //GENERATING /ASSIGNING TOKEN TO USER
