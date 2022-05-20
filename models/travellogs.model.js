@@ -34,7 +34,13 @@ const travelLogSchema = new Schema({
         type:String,
         trim:true  // removing the first space in value input 
 
+    },
+   dateCreated:{
+        type:String,
+        trim:true  // removing the first space in value input 
+
     }
+  
    
 
 
